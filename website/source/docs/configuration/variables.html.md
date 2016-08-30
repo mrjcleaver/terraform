@@ -222,6 +222,8 @@ terraform apply -var-file=foo.tfvars -var-file=bar.tfvars
 **Note** If a variable is defined in more than one file passed, the last
 variable file (reading left to right) will be the definition used. Put more
 simply, the last time a variable is defined is the one which will be used.
+**Note** Unlike .tf files, .tfvars files are not read in automatically. 
+The user has to explicitly pass them.
 
 ### Precedence example:
 
